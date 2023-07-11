@@ -1,0 +1,104 @@
+// Fonts
+@import url('https://fonts.bunny.net/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+// Admin Dashboard CSS
+@import 'admin';
+
+/*
+Main-color: #003366
+Secondary-color: #00FF99
+*/
+
+
+// General
+.btn-success {
+    background-color: #00FF99 !important;
+    color:#003366 !important;
+}
+
+.btn-dark {
+    background-color: #003366 !important;
+    color:#00FF99 !important;
+}
+
+.text-success {
+    color:#00FF99 !important;
+}
+
+.text-dark {
+    color:#003366 !important;
+}
+
+// Home page
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    background-color: #003366;
+    scroll-behavior: smooth;
+
+   .style-1 {
+        min-height: 500px;
+    }
+    nav {
+        width: 60%;
+        margin: 0 auto;
+
+        div a{
+                color: #00FF99 !important;
+        }
+    }
+
+    .home-page, .contact-page, .profile-page  {
+        min-width: 350px;
+    }
+
+    .home-image {
+        background-image: url('./images/home-image.jpg');
+        background-size: cover;
+        background-position: center;
+        width: 50%;
+    }
+
+    .chat-box {
+        min-height: 300px;
+        max-height: 500px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        position: relative;
+
+       form {
+        bottom: 0;
+        position: absolute;
+        }
+    }
+
+
+}
+
+
+// Home page -> footer
+footer {
+    color: #00FF99;
+
+    div ul li a {
+        color: #00FF99 !important;
+        margin-left: 15px;
+    }
+
+}
+
+
+// Profile page
+.profile-page {
+    .list-group-item.active{
+        background-color: #003366 ;
+        color:#00FF99 ;
+        border-color: #00FF99;
+    }
+}
